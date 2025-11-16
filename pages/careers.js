@@ -1,8 +1,8 @@
 import React from "react";
-import Head from "next/head";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import Layout from "@/components/Layout";
+import SEO from "@/components/SEO";
 import { createPageUrl } from "@/utils";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
@@ -58,13 +58,47 @@ const openings = [
 ];
 
 export default function CareersPage() {
+  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://www.vubrixpharma.com";
+  
+  // Careers page structured data
+  const careersSchema = {
+    "@context": "https://schema.org",
+    "@type": "JobPosting",
+    title: "Careers at Vubrix Pharma",
+    description: "Join Vubrix Pharma to advance global health with world-class APIs and intermediates. We're hiring talented professionals in R&D, Quality Assurance, Manufacturing, and more.",
+    identifier: {
+      "@type": "PropertyValue",
+      name: "Vubrix Pharma",
+      value: "VUBRIX-CAREERS",
+    },
+    datePosted: "2024-01-01",
+    employmentType: "FULL_TIME",
+    hiringOrganization: {
+      "@type": "Organization",
+      name: "Vubrix Pharma",
+      sameAs: baseUrl,
+    },
+    jobLocation: {
+      "@type": "Place",
+      address: {
+        "@type": "PostalAddress",
+        addressLocality: "Surat",
+        addressRegion: "Gujarat",
+        addressCountry: "IN",
+      },
+    },
+  };
+
   return (
     <Layout currentPageName="Careers">
-      <Head>
-        <title>Vubrix Pharma Careers</title>
-        <meta name="description" content="Join Vubrix Pharma to advance global health with world-class APIs and intermediates." />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-      </Head>
+      <SEO
+        title="Careers - Join Vubrix Pharma | Pharmaceutical Jobs"
+        description="Join Vubrix Pharma to advance global health with world-class APIs and intermediates. Explore career opportunities in R&D, Quality Assurance, Manufacturing, and more. Competitive benefits, growth opportunities, and a mission-driven culture."
+        keywords="Vubrix Pharma careers, pharmaceutical jobs, API manufacturing jobs, pharmaceutical careers India, R&D jobs, quality assurance jobs, pharmaceutical industry jobs, Surat jobs"
+        image="/logo.svg"
+        url={`${baseUrl}/careers`}
+        structuredData={careersSchema}
+      />
 
       {/* Hero */}
       <section className="relative bg-gradient-to-br from-[#002769] to-[#001732] text-white">

@@ -88,7 +88,7 @@ export default function Layout({ children, currentPageName }) {
                   className="h-16 w-auto"
                 />
                 <div>
-                  <h1 className="text-xl font-bold text-gray-900">Vubrix Pharma</h1>
+                  <div className="text-xl font-bold text-gray-900">Vubrix Pharma</div>
                   <p className="text-xs text-[#002769] font-medium">APIs & Intermediates</p>
                 </div>
               </motion.div>
@@ -217,7 +217,7 @@ export default function Layout({ children, currentPageName }) {
                   className="h-16 w-auto"
                 />
                 <div>
-                  <h3 className="text-xl font-bold">Vubrix Pharma</h3>
+                  <div className="text-xl font-bold">Vubrix Pharma</div>
                   <p className="text-[#002769] text-sm font-medium">APIs & Intermediates</p>
                 </div>
               </div>

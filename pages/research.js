@@ -1,5 +1,4 @@
 import React from "react";
-import Head from "next/head";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { Card, CardContent } from "@/components/ui/card";
@@ -7,8 +6,10 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Beaker, Microscope, FlaskRound, TestTube, Award, Users, TrendingUp, Lightbulb } from "lucide-react";
 import Layout from "@/components/Layout";
+import SEO from "@/components/SEO";
 
 export default function ResearchPage() {
+  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://www.vubrixpharma.com";
   const researchAreas = [
     {
       icon: Beaker,
@@ -60,14 +61,34 @@ export default function ResearchPage() {
     }
   ];
 
+  // Research page structured data
+  const researchSchema = {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    name: "Research & Development - Vubrix Pharma",
+    description: "Explore Vubrix Pharma's cutting-edge research and development initiatives in pharmaceutical manufacturing and process innovation.",
+    url: `${baseUrl}/research`,
+    mainEntity: {
+      "@type": "Organization",
+      name: "Vubrix Pharma",
+      department: {
+        "@type": "Organization",
+        name: "Research & Development",
+        description: "Cutting-edge research in pharmaceutical manufacturing and process innovation",
+      },
+    },
+  };
+
   return (
     <Layout>
-      <Head>
-        <title>Research & Development - Vubrix Pharma</title>
-        <meta name="description" content="Explore Vubrix Pharma's cutting-edge research and development initiatives in pharmaceutical manufacturing and process innovation." />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+      <SEO
+        title="Research & Development - Pharmaceutical Innovation | Vubrix Pharma"
+        description="Explore Vubrix Pharma's cutting-edge research and development initiatives in pharmaceutical manufacturing, process optimization, analytical development, and sustainable chemistry solutions. Driving innovation in API and intermediate synthesis."
+        keywords="pharmaceutical R&D, API research, process optimization, analytical development, pharmaceutical innovation, green chemistry, pharmaceutical research, drug development, process chemistry"
+        image="/logo.svg"
+        url={`${baseUrl}/research`}
+        structuredData={researchSchema}
+      />
 
       <div className="overflow-hidden">
         {/* Hero Section */}

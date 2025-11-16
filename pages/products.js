@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import Head from "next/head";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { Card, CardContent } from "@/components/ui/card";
@@ -7,8 +6,10 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Search, ArrowRight, Beaker, Atom, FlaskRound, Shield } from "lucide-react";
 import Layout from "@/components/Layout";
+import SEO from "@/components/SEO";
 
 export default function ProductsPage() {
+  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://www.vubrixpharma.com";
   const [searchTerm, setSearchTerm] = useState("");
   const [selectedCategory, setSelectedCategory] = useState("all");
 
@@ -165,14 +166,38 @@ export default function ProductsPage() {
     return matchesSearch && matchesCategory;
   });
 
+  // Products page structured data
+  const productsSchema = {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    name: "Vubrix Pharma Products - APIs & Intermediates",
+    description: "Discover our premium range of APIs and intermediates, manufactured to the highest pharmaceutical standards and trusted worldwide.",
+    url: `${baseUrl}/products`,
+    mainEntity: {
+      "@type": "ItemList",
+      itemListElement: products.slice(0, 5).map((product, index) => ({
+        "@type": "ListItem",
+        position: index + 1,
+        item: {
+          "@type": "Product",
+          name: product.name,
+          description: product.description,
+          category: product.type,
+        },
+      })),
+    },
+  };
+
   return (
     <Layout>
-      <Head>
-        <title>Products - Vubrix Pharma</title>
-        <meta name="description" content="Discover our premium range of APIs and intermediates, manufactured to the highest pharmaceutical standards and trusted worldwide." />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+      <SEO
+        title="Products - APIs & Intermediates | Vubrix Pharma"
+        description="Discover our premium range of Active Pharmaceutical Ingredients (APIs) and Intermediates including Aripiprazole, Fluconazole, and custom synthesis solutions. Manufactured to the highest pharmaceutical standards, GMP-compliant, and trusted worldwide."
+        keywords="API products, pharmaceutical intermediates, Aripiprazole API, Fluconazole API, pharmaceutical chemicals, drug intermediates, API catalog, pharmaceutical ingredients, custom synthesis, GMP APIs, pharmaceutical products"
+        image="/logo.svg"
+        url={`${baseUrl}/products`}
+        structuredData={productsSchema}
+      />
 
       <div className="overflow-hidden">
         {/* Hero Section */}

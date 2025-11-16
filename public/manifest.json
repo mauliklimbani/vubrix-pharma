@@ -1,0 +1,27 @@
+{
+  "name": "Vubrix Pharma - API & Intermediate Manufacturer",
+  "short_name": "Vubrix Pharma",
+  "description": "Leading manufacturer of high-quality Active Pharmaceutical Ingredients and Intermediates",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#002769",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/favicon.ico",
+      "sizes": "any",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "/logo.svg",
+      "sizes": "512x512",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["business", "medical", "pharmaceutical"],
+  "lang": "en-US",
+  "dir": "ltr"
+}
+

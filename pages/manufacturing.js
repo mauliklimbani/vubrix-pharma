@@ -1,5 +1,4 @@
 import React from "react";
-import Head from "next/head";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { Card, CardContent } from "@/components/ui/card";
@@ -7,8 +6,10 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Factory, Shield, Award, Globe, Beaker, Users, Clock, TrendingUp } from "lucide-react";
 import Layout from "@/components/Layout";
+import SEO from "@/components/SEO";
 
 export default function ManufacturingPage() {
+  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://www.vubrixpharma.com";
   const capabilities = [
     {
       icon: Factory,
@@ -54,14 +55,59 @@ export default function ManufacturingPage() {
     }
   ];
 
+  // Manufacturing page structured data
+  const manufacturingSchema = {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    name: "Manufacturing Capabilities - Vubrix Pharma",
+    description: "Explore Vubrix Pharma's state-of-the-art manufacturing capabilities, GMP-certified facilities, and quality assurance processes.",
+    url: `${baseUrl}/manufacturing`,
+    mainEntity: {
+      "@type": "Organization",
+      name: "Vubrix Pharma",
+      hasOfferCatalog: {
+        "@type": "OfferCatalog",
+        name: "Manufacturing Services",
+        itemListElement: [
+          {
+            "@type": "Offer",
+            itemOffered: {
+              "@type": "Service",
+              name: "API Manufacturing",
+              description: "Complete synthesis of Active Pharmaceutical Ingredients under strict GMP conditions",
+            },
+          },
+          {
+            "@type": "Offer",
+            itemOffered: {
+              "@type": "Service",
+              name: "Intermediate Production",
+              description: "Manufacturing of key intermediates for complex pharmaceutical synthesis",
+            },
+          },
+          {
+            "@type": "Offer",
+            itemOffered: {
+              "@type": "Service",
+              name: "Custom Synthesis",
+              description: "Tailored synthesis solutions for unique pharmaceutical requirements",
+            },
+          },
+        ],
+      },
+    },
+  };
+
   return (
     <Layout>
-      <Head>
-        <title>Manufacturing Capabilities - Vubrix Pharma</title>
-        <meta name="description" content="Explore Vubrix Pharma's state-of-the-art manufacturing capabilities, GMP-certified facilities, and quality assurance processes." />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+      <SEO
+        title="Manufacturing Capabilities - GMP Certified Facilities | Vubrix Pharma"
+        description="Explore Vubrix Pharma's state-of-the-art manufacturing capabilities, GMP-certified facilities, FDA-approved processes, and comprehensive quality assurance. ISO 9001:2015 certified with global distribution network."
+        keywords="GMP manufacturing, pharmaceutical manufacturing facilities, API manufacturing plant, GMP certified facility, pharmaceutical production, quality assurance, FDA approved manufacturing, ISO certified pharmaceutical manufacturer"
+        image="/logo.svg"
+        url={`${baseUrl}/manufacturing`}
+        structuredData={manufacturingSchema}
+      />
 
       <div className="overflow-hidden">
         {/* Hero Section */}

@@ -1,5 +1,4 @@
 import React from "react";
-import Head from "next/head";
 import Link from "next/link";
 import { createPageUrl } from "@/utils";
 import { motion } from "framer-motion";
@@ -20,6 +19,7 @@ import {
 } from "lucide-react";
 
 import Layout from "@/components/Layout";
+import SEO from "@/components/SEO";
 import HeroSection from "@/components/home/HeroSection";
 import ServicesOverview from "@/components/home/ServicesOverview";
 import StatsSection from "@/components/home/StatsSection";
@@ -28,14 +28,40 @@ import WhyChooseUs from "@/components/home/WhyChooseUs";
 import NewsSection from "@/components/home/NewsSection";
 
 export default function HomePage() {
+  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://www.vubrixpharma.com";
+  
+  // Homepage structured data
+  const homepageSchema = {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    name: "Vubrix Pharma - Leading API & Intermediate Manufacturer",
+    description: "Leading manufacturer of high-quality Active Pharmaceutical Ingredients and Intermediates, serving the global pharmaceutical industry with innovation and excellence.",
+    url: baseUrl,
+    mainEntity: {
+      "@type": "Organization",
+      name: "Vubrix Pharma",
+      url: baseUrl,
+      logo: `${baseUrl}/logo.svg`,
+      contactPoint: {
+        "@type": "ContactPoint",
+        telephone: "+91-9924122251",
+        contactType: "Customer Service",
+        email: "support@vubrixpharma.com",
+        areaServed: "Worldwide",
+      },
+    },
+  };
+
   return (
     <Layout>
-      <Head>
-        <title>Vubrix Pharma - APIs & Intermediates</title>
-        <meta name="description" content="Leading manufacturer of high-quality Active Pharmaceutical Ingredients and Intermediates, serving the global pharmaceutical industry with innovation and excellence." />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+      <SEO
+        title="Vubrix Pharma - Leading API & Intermediate Manufacturer | Pharmaceutical Ingredients"
+        description="Vubrix Pharma is a leading manufacturer of high-quality Active Pharmaceutical Ingredients (APIs) and Intermediates. Serving the global pharmaceutical industry with GMP-compliant products, custom synthesis, and innovative solutions. Contact us for API manufacturing, pharmaceutical intermediates, and custom synthesis services."
+        keywords="API manufacturer, pharmaceutical intermediates, active pharmaceutical ingredients, GMP compliant, custom synthesis, pharmaceutical manufacturing, API supplier, pharmaceutical chemicals, drug intermediates, pharma API, Vubrix Pharma, API manufacturing India, pharmaceutical ingredients supplier"
+        image="/logo.svg"
+        url={baseUrl}
+        structuredData={homepageSchema}
+      />
 
       <div className="overflow-hidden">
         {/* Hero Section */}

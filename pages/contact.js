@@ -1,13 +1,14 @@
 import React, { useState } from "react";
-import Head from "next/head";
 import { motion } from "framer-motion";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Phone, Mail, MapPin, Clock, Send, CheckCircle } from "lucide-react";
 import Layout from "@/components/Layout";
+import SEO from "@/components/SEO";
 
 export default function ContactPage() {
+  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://www.vubrixpharma.com";
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -32,14 +33,47 @@ export default function ContactPage() {
     });
   };
 
+  // Contact page structured data
+  const contactSchema = {
+    "@context": "https://schema.org",
+    "@type": "ContactPage",
+    name: "Contact Vubrix Pharma",
+    description: "Get in touch with Vubrix Pharma. Our team is ready to discuss your API and intermediate requirements.",
+    url: `${baseUrl}/contact`,
+    mainEntity: {
+      "@type": "Organization",
+      name: "Vubrix Pharma",
+      address: {
+        "@type": "PostalAddress",
+        streetAddress: "PLOT 51 SNEHMUDRA SOC, N/R KAPODRA CHAR RASTA",
+        addressLocality: "SURAT",
+        addressRegion: "GUJARAT",
+        postalCode: "395006",
+        addressCountry: "IN",
+      },
+      contactPoint: [
+        {
+          "@type": "ContactPoint",
+          telephone: "+91-9924122251",
+          contactType: "Customer Service",
+          email: "support@vubrixpharma.com",
+          areaServed: "Worldwide",
+          availableLanguage: ["English"],
+        },
+      ],
+    },
+  };
+
   return (
     <Layout>
-      <Head>
-        <title>Contact Us - Vubrix Pharma</title>
-        <meta name="description" content="Get in touch with Vubrix Pharma. Our team is ready to discuss your API and intermediate requirements." />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+      <SEO
+        title="Contact Us - Vubrix Pharma | Get a Quote for APIs & Intermediates"
+        description="Get in touch with Vubrix Pharma. Our team is ready to discuss your API and intermediate requirements. Contact us for quotes, custom synthesis, and pharmaceutical manufacturing solutions. Phone: +91 9924122251, Email: support@vubrixpharma.com"
+        keywords="contact Vubrix Pharma, API manufacturer contact, pharmaceutical supplier contact, get quote API, custom synthesis inquiry, pharmaceutical manufacturing contact, API supplier India"
+        image="/logo.svg"
+        url={`${baseUrl}/contact`}
+        structuredData={contactSchema}
+      />
 
       <div className="overflow-hidden">
         {/* Hero Section */}

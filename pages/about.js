@@ -1,21 +1,51 @@
 import React from "react";
-import Head from "next/head";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Users, Award, Globe, TrendingUp, CheckCircle, Target, Shield } from "lucide-react";
 import Layout from "@/components/Layout";
+import SEO from "@/components/SEO";
 
 export default function AboutPage() {
+  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://www.vubrixpharma.com";
+  
+  // About page structured data
+  const aboutSchema = {
+    "@context": "https://schema.org",
+    "@type": "AboutPage",
+    name: "About Vubrix Pharma",
+    description: "Learn about Vubrix Pharma's 3+ years of excellence in API and intermediate manufacturing, serving the global pharmaceutical industry.",
+    url: `${baseUrl}/about`,
+    mainEntity: {
+      "@type": "Organization",
+      name: "Vubrix Pharma",
+      foundingDate: "2022",
+      numberOfEmployees: {
+        "@type": "QuantitativeValue",
+        value: "5+"
+      },
+      address: {
+        "@type": "PostalAddress",
+        streetAddress: "PLOT 51 SNEHMUDRA SOC, N/R KAPODRA CHAR RASTA",
+        addressLocality: "SURAT",
+        addressRegion: "GUJARAT",
+        postalCode: "395006",
+        addressCountry: "IN",
+      },
+    },
+  };
+
   return (
     <Layout>
-      <Head>
-        <title>About Us - Vubrix Pharma</title>
-        <meta name="description" content="Learn about Vubrix Pharma's 3+ years of excellence in API and intermediate manufacturing, serving the global pharmaceutical industry." />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+      <SEO
+        title="About Us - Vubrix Pharma | Company History, Mission & Vision"
+        description="Learn about Vubrix Pharma's 3+ years of excellence in API and intermediate manufacturing. Discover our mission, vision, core values, and leadership team serving the global pharmaceutical industry with innovation and quality."
+        keywords="Vubrix Pharma about, pharmaceutical company history, API manufacturer India, pharmaceutical manufacturing company, GMP certified manufacturer, pharmaceutical industry leader, API supplier company"
+        image="/logo.svg"
+        url={`${baseUrl}/about`}
+        structuredData={aboutSchema}
+      />
 
       <div className="overflow-hidden">
         {/* Hero Section */}
