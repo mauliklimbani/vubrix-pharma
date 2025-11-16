@@ -5,19 +5,19 @@ import { Users, Globe, Award, TrendingUp } from "lucide-react";
 const stats = [
   {
     icon: Users,
-    value: "500+",
+    value: "5+",
     label: "Expert Team Members",
     description: "Skilled professionals"
   },
-  {
-    icon: Globe,
-    value: "50+",
-    label: "Countries Served",
-    description: "Global presence"
-  },
+  // {
+  //   icon: Globe,
+  //   value: "50+",
+  //   label: "Countries Served",
+  //   description: "Global presence"
+  // },
   {
     icon: Award,
-    value: "25+",
+    value: "3+",
     label: "Years Experience",
     description: "Industry leadership"
   },

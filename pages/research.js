@@ -127,7 +127,7 @@ export default function ResearchPage() {
                       </div>
                       <h3 className="text-xl font-bold text-gray-900 mb-4">{area.title}</h3>
                       <p className="text-gray-600 mb-6">{area.description}</p>
-                      <div className="space-y-2">
+                      <div className="space-y-2 text-gray-600">
                         {area.achievements.map((achievement, achievementIndex) => (
                           <Badge key={achievementIndex} variant="secondary" className="mr-2 mb-2">
                             {achievement}
@@ -143,7 +143,7 @@ export default function ResearchPage() {
         </section>
 
         {/* Ongoing Projects */}
-        <section className="py-20 bg-gradient-to-br from-gray-50 to-[#e6eaf0]">
+        {/* <section className="py-20 bg-gradient-to-br from-gray-50 to-[#e6eaf0]">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <motion.div
               initial={{ opacity: 0, y: 30 }}
@@ -211,10 +211,10 @@ export default function ResearchPage() {
               ))}
             </div>
           </div>
-        </section>
+        </section> */}
 
         {/* Research Team */}
-        <section className="py-20 bg-white">
+        {/* <section className="py-20 bg-white">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <motion.div
               initial={{ opacity: 0, y: 30 }}
@@ -281,7 +281,7 @@ export default function ResearchPage() {
               ))}
             </div>
           </div>
-        </section>
+        </section> */}
 
         {/* CTA Section */}
         <section className="py-20 bg-gradient-to-r from-[#002769] to-[#001732]">

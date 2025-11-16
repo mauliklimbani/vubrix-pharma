@@ -17,7 +17,7 @@ const reasons = [
   {
     icon: Users,
     title: "Expert Team",
-    description: "500+ skilled professionals including PhD chemists, regulatory experts, and quality specialists."
+    description: "5+ skilled professionals including PhD chemists, regulatory experts, and quality specialists."
   },
   {
     icon: Clock,
@@ -27,7 +27,7 @@ const reasons = [
   {
     icon: Globe,
     title: "Global Reach",
-    description: "Serving 50+ countries with established distribution networks and local support."
+    description: "Serving 5+ countries with established distribution networks and local support."
   },
   {
     icon: Beaker,

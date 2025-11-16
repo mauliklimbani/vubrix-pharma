@@ -104,7 +104,7 @@ export default function CareersPage() {
       {/* Stats / Highlights */}
       <section className="bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 grid grid-cols-2 md:grid-cols-4 gap-6">
-          {[{ label: "Employees", value: "500+" }, { label: "Nationalities", value: "10+" }, { label: "APIs Produced", value: "120+" }, { label: "Facilities", value: "3" }].map((item) => (
+          {[{ label: "Employees", value: "5+" }, { label: "Nationalities", value: "1" }, { label: "APIs Produced", value: "4+" }, { label: "Facilities", value: "3" }].map((item) => (
             <div key={item.label} className="text-center">
               <div className="text-3xl font-bold text-gray-900">{item.value}</div>
               <div className="text-sm text-gray-500">{item.label}</div>
@@ -196,7 +196,7 @@ export default function CareersPage() {
       </section>
 
       {/* Openings */}
-      <section id="openings" className="bg-gray-50">
+      {/* <section id="openings" className="bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
           <motion.div
             initial={{ opacity: 0, y: 16 }}
@@ -241,7 +241,7 @@ export default function CareersPage() {
             </Link>
           </div>
         </div>
-      </section>
+      </section> */}
     </Layout>
   );
 }

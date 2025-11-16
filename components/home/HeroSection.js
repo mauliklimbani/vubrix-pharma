@@ -153,21 +153,21 @@ export default function HeroSection() {
                   <div className="text-xs text-gray-500">GMP Certified</div>
                 </div>
               </div>
-              <div className="flex items-center gap-2 sm:gap-3 mb-2 sm:mb-0">
+              {/* <div className="flex items-center gap-2 sm:gap-3 mb-2 sm:mb-0">
                 <span className="inline-flex items-center justify-center w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-[#ccd5e1]">
                   <Globe className="w-5 h-5 sm:w-6 sm:h-6 text-[#001f4d]" />
                 </span>
                 <div>
-                  <div className="text-base sm:text-lg font-bold text-[#001f4d]">50+ Countries</div>
+                  <div className="text-base sm:text-lg font-bold text-[#001f4d]">5+ Countries</div>
                   <div className="text-xs text-gray-500">Global Reach</div>
                 </div>
-              </div>
+              </div> */}
               <div className="flex items-center gap-2 sm:gap-3">
                 <span className="inline-flex items-center justify-center w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-[#ccd5e1]">
                   <Users className="w-5 h-5 sm:w-6 sm:h-6 text-[#001f4d]" />
                 </span>
                 <div>
-                  <div className="text-base sm:text-lg font-bold text-[#001f4d]">25+ Years</div>
+                  <div className="text-base sm:text-lg font-bold text-[#001f4d]">3+ Years</div>
                   <div className="text-xs text-gray-500">Experience</div>
                 </div>
               </div>

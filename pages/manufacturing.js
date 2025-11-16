@@ -121,7 +121,7 @@ export default function ManufacturingPage() {
                       </div>
                       <h3 className="text-xl font-bold text-gray-900 mb-4">{capability.title}</h3>
                       <p className="text-gray-600 mb-6">{capability.description}</p>
-                      <div className="space-y-2">
+                      <div className="space-y-2 text-gray-600">
                         {capability.features.map((feature, featureIndex) => (
                           <Badge key={featureIndex} variant="secondary" className="mr-2 mb-2">
                             {feature}

@@ -165,7 +165,7 @@ export default function ContactPage() {
                               required
                               value={formData.name}
                               onChange={handleChange}
-                              className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#335588] focus:border-transparent"
+                              className="w-full px-4 py-3 text-gray-600 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#335588] focus:border-transparent"
                               placeholder="Enter your full name"
                             />
                           </div>
@@ -181,7 +181,7 @@ export default function ContactPage() {
                               required
                               value={formData.email}
                               onChange={handleChange}
-                              className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#335588] focus:border-transparent"
+                              className="w-full px-4 py-3 text-gray-600 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#335588] focus:border-transparent"
                               placeholder="Enter your email"
                             />
                           </div>
@@ -198,7 +198,7 @@ export default function ContactPage() {
                               name="company"
                               value={formData.company}
                               onChange={handleChange}
-                              className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#335588] focus:border-transparent"
+                              className="w-full px-4 py-3 text-gray-600 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#335588] focus:border-transparent"
                               placeholder="Enter your company name"
                             />
                           </div>
@@ -213,7 +213,7 @@ export default function ContactPage() {
                               name="phone"
                               value={formData.phone}
                               onChange={handleChange}
-                              className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#335588] focus:border-transparent"
+                              className="w-full px-4 py-3 text-gray-600 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#335588] focus:border-transparent"
                               placeholder="Enter your phone number"
                             />
                           </div>
@@ -228,7 +228,7 @@ export default function ContactPage() {
                             name="productInterest"
                             value={formData.productInterest}
                             onChange={handleChange}
-                            className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#335588] focus:border-transparent"
+                            className="w-full px-4 py-3 text-gray-600 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#335588] focus:border-transparent"
                           >
                             <option value="">Select your area of interest</option>
                             <option value="apis">APIs</option>
@@ -250,7 +250,7 @@ export default function ContactPage() {
                             rows={5}
                             value={formData.message}
                             onChange={handleChange}
-                            className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#335588] focus:border-transparent"
+                            className="w-full px-4 py-3 text-gray-600 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#335588] focus:border-transparent"
                             placeholder="Tell us about your requirements..."
                           />
                         </div>

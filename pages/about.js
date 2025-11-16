@@ -12,7 +12,7 @@ export default function AboutPage() {
     <Layout>
       <Head>
         <title>About Us - Vubrix Pharma</title>
-        <meta name="description" content="Learn about Vubrix Pharma's 25+ years of excellence in API and intermediate manufacturing, serving the global pharmaceutical industry." />
+        <meta name="description" content="Learn about Vubrix Pharma's 3+ years of excellence in API and intermediate manufacturing, serving the global pharmaceutical industry." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
@@ -35,7 +35,7 @@ export default function AboutPage() {
                 </span>
               </h1>
               <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-                For over 25 years, Vubrix Pharma has been at the forefront of API and intermediate manufacturing, 
+                For over 3+ years, Vubrix Pharma has been at the forefront of API and intermediate manufacturing, 
                 serving the global pharmaceutical industry with unwavering commitment to quality and innovation.
               </p>
             </motion.div>
@@ -55,7 +55,7 @@ export default function AboutPage() {
                 <h2 className="text-4xl font-bold text-gray-900 mb-6">Our Story</h2>
                 <div className="space-y-6 text-gray-600">
                   <p>
-                    Founded in 1995 by a team of visionary chemists and entrepreneurs, Vubrix Pharma 
+                    Founded in 2022 by a team of visionary chemists and entrepreneurs, Vubrix Pharma 
                     began as a small research facility with a big dream: to make high-quality pharmaceutical 
                     ingredients accessible to companies worldwide.
                   </p>
@@ -67,7 +67,7 @@ export default function AboutPage() {
                   </p>
                   <p>
                     Today, we operate state-of-the-art manufacturing facilities across multiple continents, 
-                    serve customers in over 50 countries, and maintain our position as industry leaders 
+                    serve customers in over 5 countries, and maintain our position as industry leaders 
                     through cutting-edge research and development.
                   </p>
                 </div>
@@ -89,7 +89,7 @@ export default function AboutPage() {
                   />
                 </div>
                 <div className="absolute -bottom-6 -left-6 bg-white rounded-xl p-6 shadow-lg">
-                  <div className="text-3xl font-bold text-[#002769]">25+</div>
+                  <div className="text-3xl font-bold text-[#002769]">3+</div>
                   <div className="text-gray-600">Years of Excellence</div>
                 </div>
               </motion.div>
@@ -247,9 +247,9 @@ export default function AboutPage() {
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               {[
-                { name: "Smit", role: "Director" },
+                { name: "Smit kakadiya", role: "Director" },
                 { name: "Vandit Khambhadiya", role: "Director" },
-                { name: "Dhruvik", role: "Director" }
+                { name: "Dhruvik Avaiya", role: "Director" }
               ].map((leader, index) => (
                 <motion.div
                   key={leader.name}
