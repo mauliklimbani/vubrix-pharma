@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { Search, ArrowRight, Beaker, Atom, FlaskRound, Shield } from "lucide-react";
+import { Search, ArrowRight, Beaker, Atom, FlaskRound, Shield, Globe, Microscope, Building } from "lucide-react";
 import Layout from "@/components/Layout";
 import SEO from "@/components/SEO";
 
@@ -188,6 +188,68 @@ export default function ProductsPage() {
     },
   };
 
+  const keywordPillars = [
+    {
+      icon: Globe,
+      title: "Regulated Market Supply",
+      points: [
+        "DMF-ready documentation and CTD dossier support",
+        "Multi-ton capacity for US/EU/Japan submissions",
+        "Validated cold-chain and hazmat export handling"
+      ],
+    },
+    {
+      icon: Microscope,
+      title: "Process & Quality Advantage",
+      points: [
+        "Route scouting for cost-efficient intermediates",
+        "QbD-driven analytical packages with impurity profiling",
+        "Dedicated labs for polymorph & salt screening"
+      ],
+    },
+    {
+      icon: Building,
+      title: "Partnership & CDMO Model",
+      points: [
+        "Flexible batch sizes from kilos to multi-ton campaigns",
+        "IP protection and secure tech transfer governance",
+        "Joint development agreements with milestone tracking"
+      ],
+    },
+  ];
+
+  const faqItems = [
+    {
+      question: "Do you provide DMF/CTD support for APIs like Aripiprazole and Fluconazole?",
+      answer: "Yes. Vubrix Pharma prepares US/EU-style DMF sections, stability data, and CTD modules for all commercial APIs including Aripiprazole, Fluconazole, and antifungal intermediates.",
+    },
+    {
+      question: "What minimum order quantity do you support for intermediates?",
+      answer: "Pilot batches start at 5 kg and scale seamlessly to multi-ton campaigns. We routinely supply kilogram lots for custom synthesis and tons for commercial supply.",
+    },
+    {
+      question: "Can you customize synthesis routes for proprietary molecules?",
+      answer: "Our process chemists design and validate bespoke routes under strict IP governance. We collaborate under CDA, deliver gram-to-ton scale, and transfer validated processes to your internal teams if needed.",
+    },
+    {
+      question: "How fast can you ship to regulated markets?",
+      answer: "With a dedicated export desk in Gujarat and validated forwarders, we dispatch APIs/intermediates to the US, EU, LATAM, and MENA within 10–15 business days of QC release.",
+    },
+  ];
+
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: faqItems.map((item) => ({
+      "@type": "Question",
+      name: item.question,
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: item.answer,
+      },
+    })),
+  };
+
   return (
     <Layout>
       <SEO
@@ -196,7 +258,7 @@ export default function ProductsPage() {
         keywords="API catalogue India, Aripiprazole supplier, Fluconazole manufacturer, pharmaceutical intermediates Gujarat, ketoconazole intermediate, Vildagliptin intermediate, custom synthesis APIs, GMP bulk drugs"
         image="/logo.svg"
         url={`${baseUrl}/products`}
-        structuredData={productsSchema}
+        structuredData={[productsSchema, faqSchema]}
       />
 
       <div className="overflow-hidden">
@@ -380,6 +442,86 @@ export default function ProductsPage() {
                 ))}
               </div>
             )}
+          </div>
+        </section>
+
+        {/* Keyword Pillars */}
+        <section className="py-20 bg-white border-t border-b border-gray-100">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6 }}
+              viewport={{ once: true }}
+              className="text-center mb-12"
+            >
+              <Badge className="bg-[#ccd5e1] text-[#001732] mb-4">Why Buyers Choose Us</Badge>
+              <h2 className="text-4xl font-bold text-gray-900 mb-4">Ranked Supplier Advantages</h2>
+              <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+                Search intent for APIs revolves around regulatory readiness, process excellence, and partnership reliability—areas where we consistently deliver measurable proof.
+              </p>
+            </motion.div>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+              {keywordPillars.map((pillar, index) => (
+                <motion.div
+                  key={pillar.title}
+                  initial={{ opacity: 0, y: 30 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.6, delay: index * 0.1 }}
+                  viewport={{ once: true }}
+                  className="border border-gray-100 rounded-2xl shadow-sm hover:shadow-lg transition-shadow bg-gradient-to-br from-white to-gray-50"
+                >
+                  <div className="p-6">
+                    <div className="w-14 h-14 rounded-xl bg-[#002769]/10 text-[#002769] flex items-center justify-center mb-4">
+                      <pillar.icon className="w-7 h-7" />
+                    </div>
+                    <h3 className="text-xl font-bold text-gray-900 mb-3">{pillar.title}</h3>
+                    <ul className="space-y-2 text-gray-600">
+                      {pillar.points.map((point) => (
+                        <li key={point} className="flex items-start gap-2">
+                          <span className="mt-2 w-2 h-2 rounded-full bg-[#94d12b]" />
+                          <span>{point}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                </motion.div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* FAQ */}
+        <section className="py-20 bg-gray-50">
+          <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5 }}
+              viewport={{ once: true }}
+              className="text-center mb-12"
+            >
+              <Badge className="bg-[#94d12b] text-white border-[#94d12b] mb-4">Buyer FAQs</Badge>
+              <h2 className="text-4xl font-bold text-gray-900 mb-4">API Procurement Questions</h2>
+              <p className="text-lg text-gray-600">
+                Addressing the queries that importers and formulation partners search for before shortlisting a GMP manufacturer.
+              </p>
+            </motion.div>
+            <div className="space-y-6">
+              {faqItems.map((item) => (
+                <motion.div
+                  key={item.question}
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.4 }}
+                  viewport={{ once: true }}
+                  className="bg-white border border-gray-100 rounded-2xl p-6 shadow-sm hover:shadow-md transition-shadow"
+                >
+                  <h3 className="text-xl font-semibold text-gray-900 mb-3">{item.question}</h3>
+                  <p className="text-gray-600 leading-relaxed">{item.answer}</p>
+                </motion.div>
+              ))}
+            </div>
           </div>
         </section>
 
