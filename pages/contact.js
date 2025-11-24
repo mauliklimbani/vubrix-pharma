@@ -67,9 +67,9 @@ export default function ContactPage() {
   return (
     <Layout>
       <SEO
-        title="Contact Us - Vubrix Pharma | Get a Quote for APIs & Intermediates"
-        description="Get in touch with Vubrix Pharma. Our team is ready to discuss your API and intermediate requirements. Contact us for quotes, custom synthesis, and pharmaceutical manufacturing solutions. Phone: +91 8732916059, Email: support@vubrixpharma.com"
-        keywords="contact Vubrix Pharma, API manufacturer contact, pharmaceutical supplier contact, get quote API, custom synthesis inquiry, pharmaceutical manufacturing contact, API supplier India"
+        title="Contact Vubrix Pharma | API Supplier in Surat, Gujarat"
+        description="Request GMP API quotes, custom synthesis support, or partnership info by contacting Vubrix Pharma in Pipodara, Surat. Phone +91 8732916059 · support@vubrixpharma.com."
+        keywords="contact Vubrix Pharma, Surat API supplier contact, Gujarat pharmaceutical manufacturer phone, custom synthesis inquiry India, API quotation India"
         image="/logo.svg"
         url={`${baseUrl}/contact`}
         structuredData={contactSchema}

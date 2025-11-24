@@ -92,9 +92,9 @@ export default function CareersPage() {
   return (
     <Layout currentPageName="Careers">
       <SEO
-        title="Careers - Join Vubrix Pharma | Pharmaceutical Jobs"
-        description="Join Vubrix Pharma to advance global health with world-class APIs and intermediates. Explore career opportunities in R&D, Quality Assurance, Manufacturing, and more. Competitive benefits, growth opportunities, and a mission-driven culture."
-        keywords="Vubrix Pharma careers, pharmaceutical jobs, API manufacturing jobs, pharmaceutical careers India, R&D jobs, quality assurance jobs, pharmaceutical industry jobs, Surat jobs"
+        title="Careers at Vubrix Pharma | Pharmaceutical Jobs in India"
+        description="Build your pharma career with Vubrix Pharma in Gujarat. Explore roles in R&D, manufacturing, QA, and operations with mentorship, growth tracks, and mission-driven work on global APIs."
+        keywords="Vubrix Pharma careers, pharmaceutical jobs India, Surat pharma jobs, API manufacturing careers, R&D chemist openings India, QA pharma jobs Gujarat"
         image="/logo.svg"
         url={`${baseUrl}/careers`}
         structuredData={careersSchema}

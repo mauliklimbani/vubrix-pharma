@@ -39,9 +39,9 @@ export default function AboutPage() {
   return (
     <Layout>
       <SEO
-        title="About Us - Vubrix Pharma | Company History, Mission & Vision"
-        description="Learn about Vubrix Pharma's 3+ years of excellence in API and intermediate manufacturing. Discover our mission, vision, core values, and leadership team serving the global pharmaceutical industry with innovation and quality."
-        keywords="Vubrix Pharma about, pharmaceutical company history, API manufacturer India, pharmaceutical manufacturing company, GMP certified manufacturer, pharmaceutical industry leader, API supplier company"
+        title="About Vubrix Pharma | Surat-Based GMP API Manufacturer"
+        description="Discover Vubrix Pharma’s journey from Surat, Gujarat—our leadership team, GMP-certified infrastructure, and mission to supply reliable APIs and intermediates to global pharma innovators."
+        keywords="About Vubrix Pharma, Surat pharmaceutical manufacturer, Gujarat API company, GMP compliant API supplier, pharma leadership India, API exporter background"
         image="/logo.svg"
         url={`${baseUrl}/about`}
         structuredData={aboutSchema}

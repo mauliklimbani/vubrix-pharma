@@ -191,9 +191,9 @@ export default function ProductsPage() {
   return (
     <Layout>
       <SEO
-        title="Products - APIs & Intermediates | Vubrix Pharma"
-        description="Discover our premium range of Active Pharmaceutical Ingredients (APIs) and Intermediates including Aripiprazole, Fluconazole, and custom synthesis solutions. Manufactured to the highest pharmaceutical standards, GMP-compliant, and trusted worldwide."
-        keywords="API products, pharmaceutical intermediates, Aripiprazole API, Fluconazole API, pharmaceutical chemicals, drug intermediates, API catalog, pharmaceutical ingredients, custom synthesis, GMP APIs, pharmaceutical products"
+        title="API Catalogue & Pharmaceutical Intermediates | Vubrix Pharma India"
+        description="Browse GMP-produced APIs and high-purity intermediates from Vubrix Pharma—Aripiprazole, Fluconazole, Ketoconazole precursors, Vildagliptin intermediates, and custom synthesis batches shipped worldwide."
+        keywords="API catalogue India, Aripiprazole supplier, Fluconazole manufacturer, pharmaceutical intermediates Gujarat, ketoconazole intermediate, Vildagliptin intermediate, custom synthesis APIs, GMP bulk drugs"
         image="/logo.svg"
         url={`${baseUrl}/products`}
         structuredData={productsSchema}

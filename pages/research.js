@@ -82,9 +82,9 @@ export default function ResearchPage() {
   return (
     <Layout>
       <SEO
-        title="Research & Development - Pharmaceutical Innovation | Vubrix Pharma"
-        description="Explore Vubrix Pharma's cutting-edge research and development initiatives in pharmaceutical manufacturing, process optimization, analytical development, and sustainable chemistry solutions. Driving innovation in API and intermediate synthesis."
-        keywords="pharmaceutical R&D, API research, process optimization, analytical development, pharmaceutical innovation, green chemistry, pharmaceutical research, drug development, process chemistry"
+        title="Pharma R&D & Process Innovation | Vubrix Pharma India"
+        description="See how Vubrix Pharma’s R&D center in Gujarat pioneers process optimization, analytical development, green chemistry, and AI-led scale-up support for APIs and intermediates."
+        keywords="pharma R&D India, process chemistry innovation, analytical method development, green chemistry APIs, AI process design, Vubrix research team, Surat pharmaceutical R&D"
         image="/logo.svg"
         url={`${baseUrl}/research`}
         structuredData={researchSchema}

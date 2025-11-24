@@ -101,9 +101,9 @@ export default function ManufacturingPage() {
   return (
     <Layout>
       <SEO
-        title="Manufacturing Capabilities - GMP Certified Facilities | Vubrix Pharma"
-        description="Explore Vubrix Pharma's state-of-the-art manufacturing capabilities, GMP-certified facilities, FDA-approved processes, and comprehensive quality assurance. ISO 9001:2015 certified with global distribution network."
-        keywords="GMP manufacturing, pharmaceutical manufacturing facilities, API manufacturing plant, GMP certified facility, pharmaceutical production, quality assurance, FDA approved manufacturing, ISO certified pharmaceutical manufacturer"
+        title="GMP Manufacturing Facilities in Gujarat | Vubrix Pharma"
+        description="Tour Vubrix Pharma’s Surat manufacturing campus—GMP and ISO 9001:2015 certified reactors, automated QA labs, FDA-aligned documentation, and global cold-chain distribution for regulated-market APIs."
+        keywords="Gujarat GMP manufacturing, Surat API plant, ISO 9001 pharma facility, FDA ready pharmaceutical manufacturing India, bulk drug plant India, Vubrix manufacturing capabilities"
         image="/logo.svg"
         url={`${baseUrl}/manufacturing`}
         structuredData={manufacturingSchema}

@@ -55,9 +55,9 @@ export default function HomePage() {
   return (
     <Layout>
       <SEO
-        title="Vubrix Pharma - Leading API & Intermediate Manufacturer | Pharmaceutical Ingredients"
-        description="Vubrix Pharma is a leading manufacturer of high-quality Active Pharmaceutical Ingredients (APIs) and Intermediates. Serving the global pharmaceutical industry with GMP-compliant products, custom synthesis, and innovative solutions. Contact us for API manufacturing, pharmaceutical intermediates, and custom synthesis services."
-        keywords="API manufacturer, pharmaceutical intermediates, active pharmaceutical ingredients, GMP compliant, custom synthesis, pharmaceutical manufacturing, API supplier, pharmaceutical chemicals, drug intermediates, pharma API, Vubrix Pharma, API manufacturing India, pharmaceutical ingredients supplier"
+        title="Vubrix Pharma | GMP Certified API Manufacturer in Surat, India"
+        description="Partner with Vubrix Pharma for GMP-certified APIs, intermediates, and custom synthesis from Surat, Gujarat. We support regulated markets with compliant facilities, rapid tech transfers, and end-to-end pharmaceutical manufacturing expertise."
+        keywords="GMP API manufacturer Surat, pharmaceutical intermediates India, custom synthesis company, bulk drug supplier Gujarat, regulated market API partner, Vubrix Pharma, CDMO India, API exporter"
         image="/logo.svg"
         url={baseUrl}
         structuredData={homepageSchema}
