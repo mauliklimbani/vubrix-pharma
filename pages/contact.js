@@ -45,16 +45,16 @@ export default function ContactPage() {
       name: "Vubrix Pharma",
       address: {
         "@type": "PostalAddress",
-        streetAddress: "PLOT 51 SNEHMUDRA SOC, N/R KAPODRA CHAR RASTA",
-        addressLocality: "SURAT",
-        addressRegion: "GUJARAT",
-        postalCode: "395006",
+        streetAddress: "Arihant industry, Block No. 117/C, Plot No. 9/B, N.H. No. 8, Pipodara",
+        addressLocality: "Surat",
+        addressRegion: "Gujarat",
+        postalCode: "394 110",
         addressCountry: "IN",
       },
       contactPoint: [
         {
           "@type": "ContactPoint",
-          telephone: "+91-9924122251",
+          telephone: "+91-8732916059",
           contactType: "Customer Service",
           email: "support@vubrixpharma.com",
           areaServed: "Worldwide",
@@ -68,7 +68,7 @@ export default function ContactPage() {
     <Layout>
       <SEO
         title="Contact Us - Vubrix Pharma | Get a Quote for APIs & Intermediates"
-        description="Get in touch with Vubrix Pharma. Our team is ready to discuss your API and intermediate requirements. Contact us for quotes, custom synthesis, and pharmaceutical manufacturing solutions. Phone: +91 9924122251, Email: support@vubrixpharma.com"
+        description="Get in touch with Vubrix Pharma. Our team is ready to discuss your API and intermediate requirements. Contact us for quotes, custom synthesis, and pharmaceutical manufacturing solutions. Phone: +91 8732916059, Email: support@vubrixpharma.com"
         keywords="contact Vubrix Pharma, API manufacturer contact, pharmaceutical supplier contact, get quote API, custom synthesis inquiry, pharmaceutical manufacturing contact, API supplier India"
         image="/logo.svg"
         url={`${baseUrl}/contact`}
@@ -116,12 +116,12 @@ export default function ContactPage() {
                 
                 <div className="space-y-6">
                   <div className="flex items-start space-x-4">
-                    <div className="w-12 h-12 bg-gradient-to-br from-[#335588] to-[#002769] rounded-xl flex items-center justify-center flex-shrink-0">
+                    <div className="w-12 h-12 bg-gradient-to-br from-[#94d12b] to-[#7fb324] rounded-xl flex items-center justify-center flex-shrink-0">
                       <Phone className="w-6 h-6 text-white" />
                     </div>
                     <div>
                       <h3 className="text-lg font-semibold text-gray-900 mb-1">Phone</h3>
-                      <p className="text-gray-600">+91 9924122251</p>
+                      <p className="text-gray-600">+91 8732916059</p>
                     </div>
                   </div>
 
@@ -142,24 +142,12 @@ export default function ContactPage() {
                     <div>
                       <h3 className="text-lg font-semibold text-gray-900 mb-1">Address</h3>
                       <p className="text-gray-600">
-                        PLOT 51 SNEHMUDRA SOC<br />
-                        N/R KAPODRA CHAR RASTA<br />
-                        SURAT, GUJARAT<br />
-                        INDIA
+                        Arihant industry, Block No. 117/C, Plot No. 9/B, N.H. No. 8, Pipodara, Surat, Gujarat, India 394 110
                       </p>
                     </div>
                   </div>
 
-                  <div className="flex items-start space-x-4">
-                    <div className="w-12 h-12 bg-gradient-to-br from-orange-500 to-orange-600 rounded-xl flex items-center justify-center flex-shrink-0">
-                      <Clock className="w-6 h-6 text-white" />
-                    </div>
-                    <div>
-                      <h3 className="text-lg font-semibold text-gray-900 mb-1">Business Hours</h3>
-                      <p className="text-gray-600">Monday - Friday: 8:00 AM - 6:00 PM EST</p>
-                      <p className="text-gray-600">Saturday: 9:00 AM - 1:00 PM EST</p>
-                    </div>
-                  </div>
+                  
                 </div>
               </motion.div>
 

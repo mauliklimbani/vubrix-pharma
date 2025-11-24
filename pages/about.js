@@ -27,10 +27,10 @@ export default function AboutPage() {
       },
       address: {
         "@type": "PostalAddress",
-        streetAddress: "PLOT 51 SNEHMUDRA SOC, N/R KAPODRA CHAR RASTA",
-        addressLocality: "SURAT",
-        addressRegion: "GUJARAT",
-        postalCode: "395006",
+        streetAddress: "Arihant industry, Block No. 117/C, Plot No. 9/B, N.H. No. 8, Pipodara",
+        addressLocality: "Surat",
+        addressRegion: "Gujarat",
+        postalCode: "394 110",
         addressCountry: "IN",
       },
     },
@@ -277,9 +277,9 @@ export default function AboutPage() {
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               {[
-                { name: "Smit kakadiya", role: "Director" },
-                { name: "Vandit Khambhadiya", role: "Director" },
-                { name: "Dhruvik Avaiya", role: "Director" }
+                { name: "Smit kakadiya", education: "B.Tech Chemical Engineering", role: "R&D Director" },
+                { name: "Vandit Khambhadiya", education: "B.Pharm", role: "Production Director" },
+                { name: "Dhruvik Avaiya", education: "B.Tech Chemical Engineering", role: "Marketing Director" }
               ].map((leader, index) => (
                 <motion.div
                   key={leader.name}
@@ -294,6 +294,7 @@ export default function AboutPage() {
                         <Users className="w-8 h-8 text-white" />
                       </div>
                       <h3 className="text-xl font-bold text-gray-900 mb-2">{leader.name}</h3>
+                      <p className="text-[#002769] font-semibold">{leader.education}</p>
                       <p className="text-[#002769] font-semibold">{leader.role}</p>
                     </CardContent>
                   </Card>

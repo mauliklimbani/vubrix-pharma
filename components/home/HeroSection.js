@@ -107,7 +107,7 @@ export default function HeroSection() {
               transition={{ duration: 0.8, delay: 0.4 }}
               className="text-base xs:text-lg sm:text-xl text-gray-700 mb-7 max-w-xl mx-auto lg:mx-0"
             >
-              Elevating pharmaceutical manufacturing with innovation, quality, and global reach. Delivering excellence in Active Pharmaceutical Ingredients and Intermediates since 1995.
+              Elevating pharmaceutical manufacturing with innovation, quality, and global reach. Delivering excellence in Active Pharmaceutical Ingredients and Intermediates since 2022.
             </motion.p>
 
             <motion.div

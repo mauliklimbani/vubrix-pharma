@@ -52,6 +52,7 @@ const navigation = [
 export default function Layout({ children, currentPageName }) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+  const [isMounted, setIsMounted] = useState(false);
   const router = useRouter();
 
   useEffect(() => {
@@ -60,6 +61,10 @@ export default function Layout({ children, currentPageName }) {
     };
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  useEffect(() => {
+    setIsMounted(true);
   }, []);
 
   return (
@@ -122,7 +127,7 @@ export default function Layout({ children, currentPageName }) {
                     <Link
                       href={item.href}
                       className={`text-gray-700 hover:text-[#002769] font-medium transition-colors duration-200 ${
-                        router.pathname === item.href ? "text-[#002769]" : ""
+                        isMounted && router.pathname === item.href ? "text-[#002769]" : ""
                       }`}
                     >
                       {item.name}
@@ -165,7 +170,9 @@ export default function Layout({ children, currentPageName }) {
                   <div key={item.name}>
                     <Link
                       href={item.href}
-                      className="block py-2 text-gray-700 hover:text-[#002769] font-medium"
+                      className={`block py-2 text-gray-700 hover:text-[#002769] font-medium ${
+                        isMounted && router.pathname === item.href ? "text-[#002769]" : ""
+                      }`}
                       onClick={() => setIsMenuOpen(false)}
                     >
                       {item.name}
@@ -260,20 +267,17 @@ export default function Layout({ children, currentPageName }) {
               <h4 className="text-lg font-semibold mb-4">Contact Info</h4>
               <div className="space-y-3">
                 <div className="flex items-center space-x-3">
-                  <Phone className="w-5 h-5 text-[#002769]" />
-                  <span className="text-gray-700">+91 9924122251</span>
+                  <Phone className="min-w-5 min-h-5 max-w-5 max-h-5 text-[#002769]" />
+                  <span className="text-gray-700">+91 8732916059</span>
                 </div>
                 <div className="flex items-center space-x-3">
-                  <Mail className="w-5 h-5 text-[#002769]" />
+                  <Mail className="min-w-5 min-h-5 max-w-5 max-h-5 text-[#002769]" />
                   <span className="text-gray-700">support@vubrixpharma.com</span>
                 </div>
                 <div className="flex items-start space-x-3">
-                  <MapPin className="w-5 h-5 text-[#002769] mt-1" />
+                  <MapPin className="min-w-5 min-h-5 max-w-5 max-h-5 text-[#002769] mt-1" />
                   <span className="text-gray-700">
-                    PLOT 51 SNEHMUDRA SOC<br />
-                    N/R KAPODRA CHAR RASTA<br />
-                    SURAT, GUJARAT<br />
-                    INDIA
+                    Arihant industry, Block No. 117/C, Plot No. 9/B, N.H. No. 8, Pipodara, Surat, Gujarat, India 394 110
                   </span>
                 </div>
               </div>

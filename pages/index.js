@@ -44,7 +44,7 @@ export default function HomePage() {
       logo: `${baseUrl}/logo.svg`,
       contactPoint: {
         "@type": "ContactPoint",
-        telephone: "+91-9924122251",
+        telephone: "+91-8732916059",
         contactType: "Customer Service",
         email: "support@vubrixpharma.com",
         areaServed: "Worldwide",
@@ -80,7 +80,7 @@ export default function HomePage() {
         <WhyChooseUs />
 
         {/* Latest News */}
-        <NewsSection />
+        {/* <NewsSection /> */}
 
         {/* CTA Section */}
         <section className="bg-gradient-to-r from-[#002769] to-[#001732] py-20">

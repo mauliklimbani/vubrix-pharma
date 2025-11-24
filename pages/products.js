@@ -46,7 +46,7 @@ export default function ProductsPage() {
       category: "intermediates",
       type: "Intermediate",
       description: "Core quinolinone intermediate supporting diverse CNS active compounds.",
-      features: ["CAS No.: 22246-18-0", "High Purity Grade", "Flexible Scaling"],
+      features: ["CAS No.: 22246-18-0", "End use: Aripiprazole"],
       image: "https://images.unsplash.com/photo-1582719471384-894fbb16e074?w=400"
     },
     {
@@ -55,7 +55,7 @@ export default function ProductsPage() {
       category: "intermediates",
       type: "Intermediate",
       description: "Key intermediate for Aripiprazole synthesis with controlled impurity profile.",
-      features: ["CAS No.: 120004-76-7", "Optimized for Aripiprazole", "GMP Compliant Process"],
+      features: ["CAS No.: 120004-76-7", "End use: Aripiprazole"],
       image: "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=400"
     },
     {
@@ -64,7 +64,7 @@ export default function ProductsPage() {
       category: "intermediates",
       type: "Intermediate",
       description: "Versatile piperazine derivative for neuropsychiatric API development.",
-      features: ["CAS No.: 116532-26-2", "Controlled Particle Size", "Stable Supply"],
+      features: ["CAS No.: 116532-26-2", "End use: Aripiprazole"],
       image: "https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=400"
     },
     {
@@ -73,7 +73,7 @@ export default function ProductsPage() {
       category: "intermediates",
       type: "Intermediate",
       description: "Hydroxylated quinolinone for cardiovascular and CNS candidate pipelines.",
-      features: ["CAS No.: 54167-66-6", "Low Residual Solvents", "Custom Specifications"],
+      features: ["CAS No.: 54167-66-6", "End use: Cilostazol"],
       image: "https://images.unsplash.com/photo-1582719471384-894fbb16e074?w=400"
     },
     {
@@ -82,7 +82,7 @@ export default function ProductsPage() {
       category: "intermediates",
       type: "Intermediate",
       description: "High-value tetrazole intermediate dedicated to Cilostazol manufacture.",
-      features: ["CAS No.: 73663-42-5", "End Use: Cilostazol", "Robust Quality Control"],
+      features: ["CAS No.: 73663-42-5", "End use: Cilostazol"],
       image: "https://images.unsplash.com/photo-1582719471384-894fbb16e074?w=400"
     },
     {
@@ -91,7 +91,7 @@ export default function ProductsPage() {
       category: "intermediates",
       type: "Intermediate",
       description: "Piperazine intermediate essential for Ketoconazole synthesis.",
-      features: ["CAS No.: 67614-60-7", "End Use: Ketoconazole", "Consistent Impurity Profile"],
+      features: ["CAS No.: 67614-60-7", "End use: Ketoconazole"],
       image: "https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=400"
     },
     {
@@ -100,7 +100,7 @@ export default function ProductsPage() {
       category: "intermediates",
       type: "Intermediate",
       description: "Cis-configured tosylate intermediate for advanced antifungal APIs.",
-      features: ["CAS No.: 154003-23-3", "High Chemical Stability", "Flexible Batch Sizes"],
+      features: ["CAS No.: 154003-23-3", "End use: Ketoconazole"],
       image: "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=400"
     },
     {
@@ -109,7 +109,7 @@ export default function ProductsPage() {
       category: "intermediates",
       type: "Intermediate",
       description: "Mesylate intermediate tailored for Itraconazole production.",
-      features: ["CAS No.: 67614-86-7", "End Use: Itraconazole", "Regulatory Support"],
+      features: ["CAS No.: 67614-86-7", "End use: Itraconazole"],
       image: "https://images.unsplash.com/photo-1582719471384-894fbb16e074?w=400"
     },
     {
@@ -118,7 +118,7 @@ export default function ProductsPage() {
       category: "intermediates",
       type: "Intermediate",
       description: "Chiral intermediate supporting Vildagliptin API synthesis.",
-      features: ["CAS No.: 214368-66-6", "End Use: Vildagliptin", "Chiral Purity Control"],
+      features: ["CAS No.: 214368-66-6", "End use: Vildagliptin"],
       image: "https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=400"
     },
     {
@@ -127,7 +127,7 @@ export default function ProductsPage() {
       category: "intermediates",
       type: "Intermediate",
       description: "Adamantane-based intermediate suited for antiviral and CNS targets.",
-      features: ["CAS No.: 702-82-6", "High Assay Strength", "Robust Supply Chain"],
+      features: ["CAS No.: 702-82-6", "End use: Vildagliptin"],
       image: "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=400"
     },
     {
@@ -136,7 +136,7 @@ export default function ProductsPage() {
       category: "intermediates",
       type: "Intermediate",
       description: "Halogenated aromatic intermediate for diversified API programs.",
-      features: ["CAS No.: 348-57-2", "Multi-Step Compatibility", "Secure Packaging"],
+      features: ["CAS No.: 348-57-2", "End use: Api intermediates"],
       image: "https://images.unsplash.com/photo-1582719471384-894fbb16e074?w=400"
     },
     {
@@ -145,7 +145,7 @@ export default function ProductsPage() {
       category: "intermediates",
       type: "Intermediate",
       description: "Hydrochloride salt intermediate dedicated to Trazodone synthesis.",
-      features: ["CAS No.: 52605-52-4", "End Use: Trazodone", "Controlled Moisture Content"],
+      features: ["CAS No.: 52605-52-4", "End use: Trazodone"],
       image: "https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=400"
     },
     {
@@ -154,7 +154,7 @@ export default function ProductsPage() {
       category: "intermediates",
       type: "Intermediate",
       description: "Nitrobenzene intermediate widely used in Boscalid production.",
-      features: ["CAS No.: 577-19-5", "End Use: Boscalid", "Stringent QC Release"],
+      features: ["CAS No.: 577-19-5", "End use: Boscalid"],
       image: "https://images.unsplash.com/photo-1582719471384-894fbb16e074?w=400"
     }
   ];

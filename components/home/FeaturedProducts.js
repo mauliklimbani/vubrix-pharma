@@ -9,27 +9,27 @@ import { ArrowRight, Beaker, Atom } from "lucide-react";
 
 const products = [
   {
-    category: "Cardiovascular",
-    name: "Atorvastatin Calcium",
+    category: "apis",
+    name: "Aripiprazole",
     type: "API",
-    description: "High-purity statin for cholesterol management",
-    features: ["USP/EP Compliant", "DMF Filed", "GMP Certified"],
+    description: "Antipsychotic used for the treatment of schizophrenia and bipolar disorder.",
+    features: ["CAS No.: 126722-12-6", "End Application: Antipsychotic"],
     icon: Beaker
   },
   {
-    category: "Antibiotics",
-    name: "Amoxicillin Trihydrate",
-    type: "API",
-    description: "Beta-lactam antibiotic with proven efficacy",
-    features: ["WHO Prequalified", "Multiple Patents", "Global Supply"],
+    category: "intermediates",
+    name: "7-Hydroxy-3,4-dihydro-2(1H)-quinolinone",
+    type: "Intermediate",
+    description: "Core quinolinone intermediate supporting diverse CNS active compounds.",
+    features: ["CAS No.: 22246-18-0"],
     icon: Atom
   },
   {
-    category: "Intermediate",
-    name: "Benzyl Penicillin",
+    category: "intermediates",
+    name: "Cis Tosylate",
     type: "Intermediate",
-    description: "Key intermediate for beta-lactam synthesis",
-    features: ["High Yield Process", "Cost Effective", "Scalable"],
+    description: "Cis-configured tosylate intermediate for advanced antifungal APIs.",
+    features: ["CAS No.: 154003-23-3"],
     icon: Beaker
   }
 ];
